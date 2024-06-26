@@ -71,7 +71,7 @@ def inputprocessor():
     test_data = test_data.replace('Rural', 0)
     test_data = test_data.replace('3+', 3)
     test_data = test_data.replace('Yes', 1)
-    test_data = test_data.replace('NO', 0)
+    test_data = test_data.replace('No', 0)
     #credit history modification
     test_data = test_data.replace('Good', 1)
     test_data = test_data.replace('Bad', 0)
