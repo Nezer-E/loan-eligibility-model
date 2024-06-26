@@ -10,7 +10,7 @@ import streamlit as st
 
 def inputprocessor():
 #User Input 
-    st.sidebar.header("LOAN ELIGIBITY MODEL INPUT PARAMETERS")
+    st.sidebar.header("LOAN ELIGIBILITY MODEL INPUT PARAMETERS")
 
     Gender =st.sidebar.selectbox(label= "Select Gender", options= ["Male", "Female"])
     Marital_status = st.sidebar.selectbox(label = "Married", options= ["Yes", "No"])
@@ -39,7 +39,7 @@ def inputprocessor():
         'Property_Area': [Property_area]
     })
     # main output region
-    st.header("LOAN ELIGIBITY MODEL")
+    st.header("LOAN ELIGIBILITY MODEL")
     st.write(test_data)
     train_data = pd.read_csv('loantrain.csv')
     train_data = train_data.drop('Loan_ID', axis = 1)
