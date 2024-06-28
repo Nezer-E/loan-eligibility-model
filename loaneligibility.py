@@ -20,7 +20,7 @@ def inputprocessor():
     Applicant_Income = st.sidebar.text_input("Applicant's Income", 1000)
     Co_applicant_income = st.sidebar.text_input("Co-applicant's Income", 2000)
     Loan_Amount = st.sidebar.text_input("Loan Amount", 500)
-    Loan_Term = st.sidebar.text_input("loan Term", 120)
+    Loan_Term = st.sidebar.text_input("Loan Term (number of days)", 120)
     credit_histroy = st.sidebar.selectbox(label="Credit History", options=["Good", "Bad"])
     Property_area = st.sidebar.selectbox(label = "Property Area", options = ["Urban", "Rural", "Semiurban"])
     button = st.sidebar.button("Process")
